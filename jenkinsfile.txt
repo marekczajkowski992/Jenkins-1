@@ -1,21 +1,13 @@
 pipeline {
     agent any
-
+    tools {
+        maven 'Maven_3_9_11'
+    }
     stages {
-        stage('Build') {
+        stage('Build with Maven') {
             steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'mvn clean install -DskipTests'
             }
         }
     }
-}
+    // ... other stages (Test, Deploy)
