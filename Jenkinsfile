@@ -2,9 +2,6 @@ pipeline {
     agent { 
         label 'main'
     }
-    tools {
-        maven 'Maven_3_8_4'
-    }
     stages {
         stage('Checkout') {
             steps {
