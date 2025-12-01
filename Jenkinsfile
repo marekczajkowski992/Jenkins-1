@@ -11,12 +11,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh -c "echo Hello from Jenkins!"
+                sh 'echo Hello from Jenkins!'
             }
         }
         stage('Test') {
             steps {
-                sh "And this is a test stage"
+                sh 'And this is a test stage'
             }
         }
     }
