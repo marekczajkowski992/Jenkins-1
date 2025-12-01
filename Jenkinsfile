@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent { 
+        label 'main'
+    }
     tools {
         maven 'Maven_3_8_4'
     }
