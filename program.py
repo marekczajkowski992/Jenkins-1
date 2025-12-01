@@ -1,4 +1,4 @@
-print("Hello world")
+print("Hello world!")
 num = int(input("Input your number:")) #initiating program with number
 def find_factors():
     factors = []
