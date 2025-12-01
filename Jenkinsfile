@@ -11,13 +11,11 @@ pipeline {
         }
         stage('Build') {
             steps {
-                //sh 'mvn compile'
 		sh -c "echo Hello from Jenkins!"
             }
         }
         stage('Test') {
             steps {
-                //sh 'mvn test'
 		sh "And this is a test stage"
             }
         }
